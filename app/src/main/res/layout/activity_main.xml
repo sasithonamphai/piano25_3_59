@@ -24,7 +24,7 @@
             android:background="#036a4abb"
             android:gravity="center"
             android:textStyle="bold"
-            android:textColor="#dee4f1" />
+            android:textColor="#f4f5f9" />
 
         <LinearLayout
             android:orientation="horizontal"
