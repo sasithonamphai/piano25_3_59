@@ -1,10 +1,13 @@
 package ice_pbeu.amphia.sasithon.piano;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.ButtonBarLayout;
 import android.view.View;
+import android.view.WindowInsets;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
@@ -87,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
         SoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -126,6 +130,16 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
         });
+        DOButton.setOnClickListener(new View.OnClickListener() {
+       @Override
+       public void onClick(View v) {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("https://www.youtube.com/watch?v=Oi5SvPsL6pk"));
+        startActivity(intent);
+        }
+        });
+
+
 
 
 
